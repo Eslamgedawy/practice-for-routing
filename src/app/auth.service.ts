@@ -5,7 +5,6 @@ export class AuthService {
 
   loggedIn = false;
 
-
   isAuthenticated() {
     const promise = new Promise(
       (resolve, reject) => {
@@ -17,15 +16,12 @@ export class AuthService {
     return promise;
   }
 
-  // login() {
-  //   this.loggedIn = true;
-  // }
+  login() {
+    this.loggedIn = true;
+  }
 
-  // logout() {
-  //   this.loggedIn = false;
-  // }
-
-
-  constructor() { }
+  logout() {
+    this.loggedIn = false;
+  }
 
 }

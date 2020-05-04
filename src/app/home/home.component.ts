@@ -10,7 +10,7 @@ import { AuthService } from '../auth.service';
 export class HomeComponent implements OnInit {
 
   constructor(private router: Router,
-              private authServic: AuthService) { }
+              private authService: AuthService) { }
 
   ngOnInit() {
   }
@@ -24,11 +24,11 @@ export class HomeComponent implements OnInit {
     )
   }
 
-// onLogin(){
-//   this.authServic.login();
-// }
-// onLogout(){
-//   this.authServic.logout();
-// }
+onLogin(){
+  this.authService.login()
+}
+onLogout(){
+  this.authService.logout();
+}
 
 }

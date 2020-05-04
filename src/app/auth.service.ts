@@ -13,6 +13,7 @@ export class AuthService {
         }, 800);
       }
     );
+    console.log(this.loggedIn)
     return promise;
   }
 
